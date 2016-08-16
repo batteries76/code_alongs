@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PTV App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>PTV APP</h1>
+  </header>
+
+  <div class="selections">
+    <label for="">Select origin stop: </label>
+
+    <input class="station-select" id="origin-input" type="text" list="stationNames"/>
+    <datalist id="stationNames">
+        <option value="Richmond">Richmond</option>
+        <option value="Flinders Street">Flinders Street</option>
+        <option value="East Richmond">East Richmond</option>
+        <option value="Burnley">Burnley</option>
+        <option value="Hawthorn">Hawthorn</option>
+        <option value="Glenferrie">Glenferrie</option>
+        <option value="Parliament">Parliament</option>
+        <option value="Melbourne Central">Melbourne Central</option>
+        <option value="Flagstaff">Flagstaff</option>
+        <option value="Kooyong">Kooyong</option>
+        <option value="Tooronga">Tooronga</option>
+        <option value="Southern Cross">Southern Cross</option>
+        <option value="South Yarra">South Yarra</option>
+        <option value="Prahran">Prahran</option>
+        <option value="Windsor">Windsor</option>
+    </datalist>
+  </div>
+
+  <div class="selections">
+    <label for="">Select destination stop</label>
+
+    <input class="station-select" id="destination-input" type="text" list="stationNames"/>
+    <datalist id="stationNames">
+        <option value="Richmond">Richmond</option>
+        <option value="Flinders Street">Flinders Street</option>
+        <option value="East Richmond">East Richmond</option>
+        <option value="Burnley">Burnley</option>
+        <option value="Hawthorn">Hawthorn</option>
+        <option value="Glenferrie">Glenferrie</option>
+        <option value="Parliament">Parliament</option>
+        <option value="Melbourne Central">Melbourne Central</option>
+        <option value="Flagstaff">Flagstaff</option>
+        <option value="Kooyong">Kooyong</option>
+        <option value="Tooronga">Tooronga</option>
+        <option value="Southern Cross">Southern Cross</option>
+        <option value="South Yarra">South Yarra</option>
+        <option value="Prahran">Prahran</option>
+        <option value="Windsor">Windsor</option>
+    </datalist>
+  </div>
+  <div class="journey">
+    <button id="create-journey">Create Journey</button>
+    <br>
+    <br>
+    <span id="journey-data">Your Journey: </span>
+  </div>
+
+  <script src="journey.js"></script>
+
+</body>
+</html>

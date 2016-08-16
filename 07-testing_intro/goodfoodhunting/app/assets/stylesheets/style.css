@@ -1,0 +1,65 @@
+.ui-card {
+  background-color: mistyrose;
+  width: 100%;
+  float: left;
+  transition: .3s;
+  box-shadow: 2px 2px 2px gray;
+}
+
+.ui-card:hover {
+  transform: translateY(0.3em);
+}
+
+.ui-card header {
+  line-height: 2em;
+}
+
+.ui-card h2 {
+  font-size: 1.2em;
+}
+
+.image {
+  position: relative;
+}
+
+.avatar {
+  display: inline-block; /* reminder */
+  vertical-align: middle;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+}
+
+.star {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: yellow;
+  font-size: 3em;
+  transition: .5s;
+  opacity: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.image:hover .star {
+  opacity: 1;
+}
+
+.right {
+  float: right;
+}
+
+.content {
+  padding: 1em;
+}
+
+@media (min-width: 36em) {
+
+  .ui-card {
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}

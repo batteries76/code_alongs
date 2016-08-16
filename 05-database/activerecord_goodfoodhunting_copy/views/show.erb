@@ -1,0 +1,25 @@
+<h1><%= @dish.name %></h1>
+
+<img src="<%= @dish.image_url %>" alt="">
+
+<a href="/dishes/<%= @dish.id %>/edit">edit dish</a>
+
+<p>This dish is a "<%= if @dish.dish_type DishType.find(@dish.dish_type_id).name %>" dish</p>
+
+<form action="/dishes/<%= @dish.id %>" method="post">
+  <input type="hidden" value="delete" name="_method">
+  <button>Delete</button>
+</form>
+
+<h2>Comments</h2>
+
+<% @comments.each do |comment| %>
+  <p><%= comment.body %></p>
+<% end %>
+
+<form action="/dishes/<%= @dish.id %>/comments" method="post">
+  <textarea name="body" id="" cols="30" rows="10">
+
+  </textarea>
+  <button>post</button>
+</form>

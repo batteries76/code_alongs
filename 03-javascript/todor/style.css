@@ -1,0 +1,9 @@
+.done {
+  text-decoration: line-through;
+  background-color: mistyrose;
+}
+
+.undone {
+  text-decoration: none;
+  background-color: inherit;
+}

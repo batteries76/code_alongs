@@ -1,0 +1,7 @@
+<h1>goodfoodhuntingtypes</h1>
+
+<% @dish_types.each do |dish_type| %>
+
+  <a href="/dishes/<%= dish_type.id %>"><%= dish_type.name %></a>
+
+<% end %>

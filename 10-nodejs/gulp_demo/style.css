@@ -1,0 +1,15 @@
+body {
+  background-color: plum; }
+
+.card h2 {
+  background-color: linen;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%; }
+.card h3 {
+  background-color: red;
+  border-radius: 20%;
+  -moz-border-radius: 20%;
+  -ms-border-radius: 20%; }
+
+/*# sourceMappingURL=style.css.map */

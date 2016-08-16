@@ -1,0 +1,31 @@
+$primary-color: green;
+
+body {
+  background-color: $primary-color;
+}
+
+// .card h2 {
+//   background-color: linen;
+// }
+//
+// .card h3 {
+//   background-color: red;
+// }
+
+@mixin border-radius($radius){
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+}
+
+.card {
+  h2 {
+    background-color: linen;
+    @include border-radius(50%);
+    user-select: none;
+  }
+  h3 {
+    background-color: red;
+    @include border-radius(20%);
+  }
+}

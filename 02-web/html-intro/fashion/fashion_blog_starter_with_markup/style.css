@@ -1,0 +1,50 @@
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 5%;
+}
+
+header {
+
+}
+
+nav li {
+  background-color: black;
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  height: 70px;
+  width: 210;  
+}
+
+nav li a {
+  color: white;
+  display: inline-block;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  color: red;
+  font-style: normal;
+  text-decoration: none;
+}
+
+article {
+
+}
+
+main {
+  width: 63%;
+  display: inline-block;
+  margin: 0;
+}
+
+aside {
+  width: 25%;
+  display: inline-block;
+  margin 0;
+  vertical-align: top;
+  padding: 4%;
+}

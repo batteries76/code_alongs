@@ -1,0 +1,16 @@
+<h2>Rock Paper Scissors</h2>
+
+<form class="" action="/rock_paper_scissors" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <label for="">Choose from rock paper or scissors</label>
+  <input type="text" name="throw" value="">
+  <button>throw</button>
+</form>
+
+<% if @throw %>
+  <h2>Your go was <%= @throw %> and the computer went with <%= @choice %></h2>
+<% end %>
+
+<br>
+<br>
+<a href="/">Home</a>

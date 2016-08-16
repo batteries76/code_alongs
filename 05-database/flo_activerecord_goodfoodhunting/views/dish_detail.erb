@@ -1,0 +1,29 @@
+
+<h2>Dish details</h2>
+
+<h1><%= @dish.name %></h1>
+
+<img src="<%= @dish.image_url %>" alt="">
+
+<!-- thats the assosciation defin in the DishType class to access dish_type_id-->
+<p>This dish has <strong>"<%= DishType.find(@dish.dish_type_id).name if @dish.dish_type %>"</strong> as dish type!</p>
+
+<a href="/dishes/<%= @dish.id %>/edit">edit dish</a>
+
+<form action="/dishes/<%= @dish.id%>" method="post">
+  <input type="hidden" value="delete" name="_method">
+  <button>Delete Button</button>
+</form>
+
+<h2>Comments</h2>
+
+<% @comments.each do |comment| %>
+  <p><%= comment.body%></p>
+<% end %>
+
+<form action="/dishes/<%= @dish.id%>/comments" method="post">
+  <textarea name="body" id="" cols="30" rows="10">
+
+  </textarea>
+  <button>Post Comment</button>
+</form>

@@ -1,0 +1,14 @@
+
+<h2>Update your item details</h2>
+
+<form action="/dishes/<%= @item.id %>" method="post">
+  <input type="hidden" value="patch" name="_method">
+  <label for="">new name? </label>
+  <input type="text" name="name" value="<%= @item.name %>">
+
+  <label for="">new image? </label>
+  <input type="text" name="image_path" value="<%= @item.image_path %>">
+
+  </select>
+  <button>update item</button><br>
+</form>

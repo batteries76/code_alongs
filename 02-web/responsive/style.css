@@ -1,0 +1,12 @@
+.outer {
+  color:red;
+  font-size: 2 em;
+}
+
+.inner {
+  font-size: 2em;
+}
+
+a {
+  color: inherit;
+}

@@ -1,0 +1,48 @@
+
+
+<h1>GoodFoodHunting</h1>
+
+<ul>
+  <li>
+    <a href="/">ALL</a>
+  </li>
+    <% @dish_types.each do |dish_type| %>
+
+    <!--behind the ? -->
+    <li>
+      <a href="/?id=<%= dish_type.id %>">
+      <%= dish_type.name %>
+      </a>
+    </li>
+    <% end %>
+</ul>
+
+
+
+<% if logged_in? %>
+logged in as: <%= current_user.email%>
+<form action="/session" method="post">
+  <input type="hidden" value="delete" name="_method">
+  <button>logout</button>
+</form>
+
+<% else %>
+<a href="/session/new"><button>login</button></a>
+
+
+<% end%>
+
+<a href="/dishes/new"><button>new dish</button></a>
+
+
+
+<% @dishes.each do |dish|%>
+<p>
+  <a href="/dishes/<%= dish.id%>">
+    <%= dish.name%></a>
+</p>
+<a href="/dishes/<%= dish.id%>">
+  <img src="<%= dish.image_url %>" alt="" />
+</a>
+
+<% end %>

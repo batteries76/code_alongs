@@ -1,0 +1,10 @@
+<form action="/dishes" method="post">
+  <input type="hidden" value="patch" name="_method">
+  <label for="">name</label>
+  <input type="text" name="name" value="<%= @dish['name'] %>">
+
+  <label for="">image url</label>
+  <input type="text" name="image_url">
+
+  <button>update dish</button>
+</form>

@@ -1,0 +1,48 @@
+body {
+  background-color: darkslategray;
+  padding: 3%;
+  width: 100%;
+}
+
+.heading {
+  width: 92%;
+  height: 200px;
+  background-color: lightslategray;
+}
+
+h1 {
+  display: inline-block;
+  color: lightskyblue;
+  vertical-align: middle;
+}
+
+h3 {
+  display: inline-block;
+  color: mintcream;
+  background-color: inherit;
+}
+
+img {
+  width: 45%;
+}
+
+.account-head {
+  width: 49%;
+  color: mintcream;
+  height: 200px;
+  background-color: darkolivegreen;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.buttons {
+  width: 49%;
+  height: 100px;
+  background-color: darkkhaki;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.inputbox {
+
+}

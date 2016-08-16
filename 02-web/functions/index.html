@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toilet</title>
+</head>
+<body>
+
+  <button id="flushBtn">flush</button>
+  <button id="poopBtn">poop</button>
+
+  <script>
+
+    // var reminder = function() {
+    //   alert('time to take med');
+    // }
+    var poop = function() {
+        document.body.style.backgroundColor = 'darkolivegreen';
+    }
+
+    var flush = function() {
+        document.body.style.backgroundColor = 'mintcream';
+    }
+
+    var flushBtn = document.getElementById('flushBtn');
+    var poopBtn = document.getElementById('poopBtn');
+    flushBtn.addEventListener('click', flush);
+    poopBtn.addEventListener('click', poop);
+
+  </script>
+</body>
+</html>

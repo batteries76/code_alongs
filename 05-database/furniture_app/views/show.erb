@@ -1,0 +1,14 @@
+<h1><%= @item.name %></h1>
+
+<img src="<%= @item.image_path %>" alt="">
+
+  <% if current_user == @item.user_id %>
+    <a href="/item/<%= @item.id %>/edit">edit item</a>
+  <% end %>
+
+  <% if current_user == @item.user_id %>
+    <form action="/item/<%= @item.id %>" method="post">
+      <input type="hidden" value="delete" name="_method">
+      <button>Delete</button>
+    </form>
+  <% end %>

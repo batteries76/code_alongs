@@ -1,0 +1,18 @@
+<h1><%= @dish.name %></h1>
+
+<img src="<%= @dish.image_url %>" alt="">
+
+<a href="/dishes/<%= @dish.id %>/edit">edit dish</a>
+
+<form action="/dishes/<%= @dish.id %>" method="post">
+  <input type="hidden" value="delete" name="_method">
+  <button>delete</button>
+</form>
+
+<h2>Comments</h2>
+
+<form action="/dishes/<%= @dish.id %>/comments" method="post")
+  <textarea name="body">
+  </textarea>
+  <button>post</button>
+</form>

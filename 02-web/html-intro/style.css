@@ -1,0 +1,23 @@
+body {
+  background-color: plum;
+}
+
+.outer h1 {
+  text-align: centre;
+}
+
+#menu {
+  background-colour: tomato;
+}
+
+#menu li {
+  list-style-type: none;
+}
+
+.warning {
+  color: lime;
+}
+
+.desire {
+  font-size: 400%;
+}
